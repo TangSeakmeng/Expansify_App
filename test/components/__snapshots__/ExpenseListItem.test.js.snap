@@ -10,9 +10,9 @@ exports[`should expenseListItem with fixture data 1`] = `
     </h3>
   </[object Object]>
   <p>
-    109500
+    $109,500.00
      - 
-    12-28-1969
+    December 28th, 1969
   </p>
 </div>
 `;
