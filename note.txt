@@ -87,3 +87,9 @@
 
 19. Install Enzyme
     yarn add enzyme@3.0.0 enzyme-adapter-react-16@1.0.0 raf@3.3.2
+
+20. run server in npm
+    npm run serve
+
+21. Chunk.entrypoints: Use Chunks.groupsIterable and filter by instanceof Entrypoint instead
+    yarn add extract-text-webpack-plugin@next --dev
