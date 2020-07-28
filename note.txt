@@ -93,3 +93,6 @@
 
 21. Chunk.entrypoints: Use Chunks.groupsIterable and filter by instanceof Entrypoint instead
     yarn add extract-text-webpack-plugin@next --dev
+
+22. yarn install
+    yarn install --production
