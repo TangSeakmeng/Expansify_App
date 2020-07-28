@@ -18,6 +18,7 @@
     "heroku-prebuild": "yarn run build:prod"
   },
   "dependencies": {
+    "@babel/core": "^7.10.5",
     "@babel/plugin-proposal-object-rest-spread": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
@@ -56,10 +57,8 @@
     "uuid": "^8.2.0",
     "validator": "^13.1.1",
     "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
-  "devDependencies": {
-    "@babel/core": "^7.10.5",
-    "webpack-cli": "^3.3.12"
-  }
+  "devDependencies": {}
 }
