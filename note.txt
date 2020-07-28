@@ -1,0 +1,89 @@
+1. install live-server
+    yarn global add live-server
+    npm install -g live-server
+
+2. run live-server 
+    live-server public
+
+3. install babel
+    yarn global add babel-cli
+    npm install -g babel-cli
+
+4. init yarn
+    yarn init
+
+5. add yarn into dependencies
+    yarn add babel-preset-react babel-preset-env
+
+6. convert code from ES6, JSX to ES5
+    babel src/app.js --out-file=public/scripts/app.js --presets=env,react 
+    babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+           (source)                 (destination)
+
+7. Uninstall Global Module
+    npm uninstall -g live-server babel-cli
+
+8. Install Local Module 
+    yarn add live-server babel-cli
+
+9. Run scripts  
+    yarn run script_name
+
+10. In this case webpack and webpackcli must be install globally
+    npm i -g webpack webpack-cli
+    yarn add global webpack webpack-cli
+
+11. install react using npm
+    yarn add react 
+    yarn add react-dom
+
+12. Config Webpack with babel
+    yarn add babel-core babel-loader
+
+    @babel/preset-env
+    @babel/preset-react 
+
+    babel
+    babel-cli
+    babel-loader
+    babel-preset-env
+    babel-preset-react
+    
+    
+    react
+    react-dom
+
+    -d
+    @babel/core
+
+	"presets": ["@babel/preset-env","@babel/preset-react"]
+
+13. Yarn add webpack dev server
+    yarn add webpack-dev-server
+
+14. Install Babel Transformation
+    yarn add babel-plugin-transform-class-properties
+
+13. Install React modal
+    yarn add react modal
+
+14. Install CSS loader
+    yarn add style-loader css-loader
+
+15. Install scss loader
+    yarn add scss-loader node-sass
+
+16. Using rem 
+    1 rem = 16px
+    12px / 16px = 0.75rem
+    18px / 16px = 1.125rem
+
+17. Install Normailize
+    yarn add normalize.css
+
+18. run jest with watch
+    yarn scriptname --watchAll;
+    yarn test --watchAll;
+
+19. Install Enzyme
+    yarn add enzyme@3.0.0 enzyme-adapter-react-16@1.0.0 raf@3.3.2

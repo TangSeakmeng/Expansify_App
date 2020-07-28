@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render header correctly using ReactShallowRenderer 1`] = `
+<header>
+  <h1>
+    Expansify App
+  </h1>
+  <NavLink
+    activeClassName="is-active"
+    exact={true}
+    to="/"
+  >
+    Dashboard
+  </NavLink>
+  <NavLink
+    activeClassName="is-active"
+    to="/create"
+  >
+    Create Expense
+  </NavLink>
+  <NavLink
+    activeClassName="is-active"
+    to="/help"
+  >
+    help
+  </NavLink>
+</header>
+`;
+
+exports[`should render header correctly using shallow 1`] = `
+<header>
+  <h1>
+    Expansify App
+  </h1>
+  <[object Object]
+    activeClassName="is-active"
+    exact={true}
+    to="/"
+  >
+    Dashboard
+  </[object Object]>
+  <[object Object]
+    activeClassName="is-active"
+    to="/create"
+  >
+    Create Expense
+  </[object Object]>
+  <[object Object]
+    activeClassName="is-active"
+    to="/help"
+  >
+    help
+  </[object Object]>
+</header>
+`;
