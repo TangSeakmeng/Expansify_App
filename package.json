@@ -16,7 +16,7 @@
     "test": "jest --config=jest.config.json",
     "start": "node server/server.js",
     "heroku-prebuild": "yarn run build:prod",
-    "heroku-postbuild": "webpack --config webpack.config.js"
+    "heroku-postbuild": "webpack -p --env production"
   },
   "dependencies": {
     "@babel/core": "^7.10.5",
