@@ -11,11 +11,11 @@ test('should remove expense by id', () => {
     const action = {
         type: 'REMOVE_EXPENSE',
         expense: {
-            id: 2
+            id: 1
         }
     }
     const state = expenseReducer(expenses, action);
-    expect(state).toEqual([ expenses[0], expenses[2] ]);
+    expect(state).toEqual([ expenses[1], expenses[2] ]);
 })
 
 test('should remove expense by id if id is not found', () => {

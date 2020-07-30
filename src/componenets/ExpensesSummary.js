@@ -4,7 +4,7 @@ import numeral from 'numeral';
 import expenses_total from '../selectors/expenses-total';
 import selectorExpenses from '../selectors/expenses';
 
-const ExpenseSummary = (props) => {
+const ExpenseSummary2 = (props) => {
     const expenseWord = props.expenses.length <= 1 ? 'expense' : 'expenses';
 
     return (    
@@ -20,4 +20,4 @@ const mapStateToProps = (state) => {
     };
 };
 
-export default connect(mapStateToProps)(ExpenseSummary);
+export default connect(mapStateToProps)(ExpenseSummary2);

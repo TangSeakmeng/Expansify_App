@@ -96,3 +96,11 @@
 
 22. yarn install
     yarn install --production
+
+23. install Firebase CLI
+    npm install -g firebase-tools
+
+24. set up heroku environment key
+    heroku Config
+    heroku config:set key=value
+    heroku config:untset key

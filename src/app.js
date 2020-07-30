@@ -9,6 +9,7 @@ import configureStore from './store/configure';
 import { addExpense, removeExpense, editExpense } from './actions/expenses';
 import { setTextFilter, sortByAmount, sortByDate, setStartDate, setEndDate } from './actions/filters';
 import getVisibleExpenses from './selectors/expenses';
+import './firebase/firebase';
 
 import 'normalize.css/normalize.css'
 import './style/style.scss';
