@@ -6,7 +6,7 @@ import AppRouter from './routers/AppRouter';
 
 import configureStore from './store/configure';
 import { startSetExpenses } from './actions/expenses';
-import './firebase/firebase';
+import { firebase } from './firebase/firebase';
 
 import 'normalize.css/normalize.css'
 import './style/style.scss';
@@ -21,6 +21,15 @@ const jsx = (
 );
 
 ReactDOM.render(<p>Loading...</p>, document.getElementById('app'));
+
 store.dispatch(startSetExpenses()).then(() => {
     ReactDOM.render(jsx, document.getElementById('app'));
+});
+
+firebase.auth().onAuthStateChanged((user) => {
+    if(user) {
+        console.log('log in')
+    } else {
+        console.log('log out')
+    }
 });
