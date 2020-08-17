@@ -1,0 +1,22 @@
+.form {
+    display: flex;
+    flex-direction: column;
+
+    > * {
+        margin-bottom: $m-size;
+    }
+}
+
+.form input, .form textarea {
+    width: 100%;
+}
+
+.form__error {
+    margin: 0 0 $s-size 0;
+    font-style: italic;
+    display: block;
+    background-color: palevioletred;
+    padding: $m-size;
+    color: white;
+    border-radius: 10px;
+}

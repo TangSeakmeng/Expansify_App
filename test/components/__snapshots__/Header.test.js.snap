@@ -1,51 +1,58 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render header correctly using ReactShallowRenderer 1`] = `
-<header>
-  <h1>
-    Expansify App
-  </h1>
-  <NavLink
-    activeClassName="is-active"
-    exact={true}
-    to="/dashboard"
+<header
+  className="header"
+>
+  <div
+    className="content-container"
   >
-    Dashboard
-  </NavLink>
-  <NavLink
-    activeClassName="is-active"
-    to="/create"
-  >
-    Create Expense
-  </NavLink>
-  <button>
-    Logout
-  </button>
+    <div
+      className="header__content"
+    >
+      <Link
+        className="header__title"
+        to="/dashboard"
+      >
+        <h1>
+          Expansify App
+        </h1>
+      </Link>
+      <button
+        className="button button--link"
+      >
+        Logout
+      </button>
+    </div>
+  </div>
 </header>
 `;
 
 exports[`should render header correctly using shallow 1`] = `
-<header>
-  <h1>
-    Expansify App
-  </h1>
-  <[object Object]
-    activeClassName="is-active"
-    exact={true}
-    to="/dashboard"
+<header
+  className="header"
+>
+  <div
+    className="content-container"
   >
-    Dashboard
-  </[object Object]>
-  <[object Object]
-    activeClassName="is-active"
-    to="/create"
-  >
-    Create Expense
-  </[object Object]>
-  <button
-    onClick={[Function]}
-  >
-    Logout
-  </button>
+    <div
+      className="header__content"
+    >
+      <[object Object]
+        className="header__title"
+        to="/dashboard"
+      >
+        <h1>
+          Expansify App
+        </h1>
+      </[object Object]>
+      <button
+        className="button button--link"
+        onClick={[Function]}
+      >
+        Logout
+      </button>
+    </div>
+  </div>
 </header>
 `;

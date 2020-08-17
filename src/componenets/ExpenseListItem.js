@@ -7,16 +7,19 @@ import numeral from 'numeral';
 import { removeExpense } from '../actions/expenses';
 
 const ExpenseListItem = ({ dispatch, id, description, amount, createdAt }) => (
-    <div>
-        <Link to={`/edit/${id}`}>
-            <h3>{ description }</h3>
-        </Link>
-        <p>{ numeral(amount).format('$0,0.00') } - { moment(createdAt).format('MMMM Do, YYYY') }</p>
-        
-        {/* <button onClick={() => {
-            props.dispatch(removeExpense({ id }))
-        }}>Remove</button> */}
-    </div>
+    <Link to={`/edit/${id}`} className="list-item">
+        <div>
+            <h3 className="list-item__title">{ description }</h3>
+            <p className="list-item__subtitle">{ moment(createdAt).format('MMMM Do, YYYY') }</p>
+        </div>
+        <div>
+            <h3 className="list-item__data">{ numeral(amount).format('$0,0.00') }</h3>
+        </div>
+    </Link>
 );
+
+{/* <button onClick={() => {
+    props.dispatch(removeExpense({ id }))
+}}>Remove</button> */}
 
 export default ExpenseListItem;
