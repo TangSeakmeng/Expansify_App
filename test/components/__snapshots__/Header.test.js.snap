@@ -8,7 +8,7 @@ exports[`should render header correctly using ReactShallowRenderer 1`] = `
   <NavLink
     activeClassName="is-active"
     exact={true}
-    to="/"
+    to="/dashboard"
   >
     Dashboard
   </NavLink>
@@ -18,12 +18,9 @@ exports[`should render header correctly using ReactShallowRenderer 1`] = `
   >
     Create Expense
   </NavLink>
-  <NavLink
-    activeClassName="is-active"
-    to="/help"
-  >
-    help
-  </NavLink>
+  <button>
+    Logout
+  </button>
 </header>
 `;
 
@@ -35,7 +32,7 @@ exports[`should render header correctly using shallow 1`] = `
   <[object Object]
     activeClassName="is-active"
     exact={true}
-    to="/"
+    to="/dashboard"
   >
     Dashboard
   </[object Object]>
@@ -45,11 +42,10 @@ exports[`should render header correctly using shallow 1`] = `
   >
     Create Expense
   </[object Object]>
-  <[object Object]
-    activeClassName="is-active"
-    to="/help"
+  <button
+    onClick={[Function]}
   >
-    help
-  </[object Object]>
+    Logout
+  </button>
 </header>
 `;
